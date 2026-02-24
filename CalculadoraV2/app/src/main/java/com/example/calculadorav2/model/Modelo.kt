@@ -39,7 +39,7 @@ class Modelo {
             '/' -> resultado = misDatos.num1.toDouble() / misDatos.num2.toDouble()
         }
 
-        misDatos.signo = '='
+        //misDatos.signo = '='
         misDatos.terminado = true
 
         misDatos.resultado = resultado

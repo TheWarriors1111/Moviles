@@ -114,9 +114,10 @@ class MainActivity : AppCompatActivity() {
                     binding.txtHistorial.text =
                         misDatosRecibidos.num1 + misDatosRecibidos.signo.toString()
                     binding.txtResultado.text = misDatosRecibidos.num2
-                } else {
+                }
+                if (misDatosRecibidos.terminado){
                     binding.txtHistorial.text =
-                        binding.txtHistorial.text.toString() + misDatosRecibidos.num2 + "="
+                        misDatosRecibidos.num1 + misDatosRecibidos.signo + misDatosRecibidos.num2 + "="
                     binding.txtResultado.text = misDatosRecibidos.resultado.toString()
                 }
             }
