@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    tools:context=".DivisiblesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divisible entre 2" />
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divisible entre 3" />
+
+        <CheckBox
+            android:id="@+id/cb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divisible entre 5" />
+
+        <CheckBox
+            android:id="@+id/cb10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divisible entre 10" />
+
+        <CheckBox
+            android:id="@+id/cbNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No es divisible entre ninguno de los anteriores" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btValidar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Validar" />
+
+            <TextView
+                android:id="@+id/txtValidacion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pendiente"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

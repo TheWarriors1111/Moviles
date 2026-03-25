@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.apidogsview2026"
+    namespace = "com.example.fragmentos"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.apidogsview2026"
+        applicationId = "com.example.fragmentos"
         minSdk = 28
         targetSdk = 36
         versionCode = 1
@@ -44,16 +44,13 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.recyclerview)
-    implementation(libs.androidx.cardview)
+    implementation(libs.androidx.coordinatorlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.google.android.material:material:1.14.0-alpha10")
-    implementation("com.squareup.retrofit2:retrofit:3.0.0")
-    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
-    implementation("com.github.bumptech.glide:glide:5.0.5")
+    implementation(libs.material.v1140alpha10)
     /* Patrón MVVM */
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
+    implementation("androidx.fragment:fragment-ktx:1.8.9" )
 }

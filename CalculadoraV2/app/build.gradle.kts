@@ -5,9 +5,7 @@ plugins {
 android {
     namespace = "com.example.calculadorav2"
     compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
+        version = release(36)
     }
 
     defaultConfig {
@@ -29,6 +27,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -48,7 +47,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.google.android.material:material:1.14.0-alpha09")
     /*Patrónn MVVM**/
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
